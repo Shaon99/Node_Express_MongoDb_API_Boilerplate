@@ -1,0 +1,70 @@
+GET http://localhost:7000/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNoYW9uIEFobWVkIiwidXNlSWQiOiI2MzE5Y2E4ZTA2MGYzYzM3Yzc2MTEyMTAiLCJpYXQiOjE2NjI2Mzg3ODYsImV4cCI6MTY2MjY0NTk4Nn0.FroUdsnjRfWmSJnV0uwfPCN_c3v0eqgVSsFwVOxuy7s
+
+
+###
+GET http://localhost:7000/products/631509bc48bbd9b36d10242e
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNoYW9uIEFobWVkIiwidXNlSWQiOiI2MzE5Y2E4ZTA2MGYzYzM3Yzc2MTEyMTAiLCJpYXQiOjE2NjI2Mzg3ODYsImV4cCI6MTY2MjY0NTk4Nn0.FroUdsnjRfWmSJnV0uwfPCN_c3v0eqgVSsFwVOxuy7s
+
+
+###
+POST  http://localhost:7000/products
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNoYW9uIEFobWVkIiwidXNlSWQiOiI2MzE5Y2E4ZTA2MGYzYzM3Yzc2MTEyMTAiLCJpYXQiOjE2NjI2Mzg3ODYsImV4cCI6MTY2MjY0NTk4Nn0.FroUdsnjRfWmSJnV0uwfPCN_c3v0eqgVSsFwVOxuy7s
+
+
+{
+    "product_name":"product 4",
+    "product_price":22,
+    "product_quantity":100,
+    "product_brand":"brand 4",
+    "product_category":"category 4",
+    "product_description":"This is the product 4"
+}
+
+###
+DELETE  http://localhost:7000/products/6319db532e7221cdb9179388
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNoYW9uIEFobWVkIiwidXNlSWQiOiI2MzE5Y2E4ZTA2MGYzYzM3Yzc2MTEyMTAiLCJpYXQiOjE2NjI2Mzg3ODYsImV4cCI6MTY2MjY0NTk4Nn0.FroUdsnjRfWmSJnV0uwfPCN_c3v0eqgVSsFwVOxuy7s
+
+###
+
+PATCH  http://localhost:7000/products/631509bc48bbd9b36d10242e
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNoYW9uIEFobWVkIiwidXNlSWQiOiI2MzE5Y2E4ZTA2MGYzYzM3Yzc2MTEyMTAiLCJpYXQiOjE2NjI2Mzg3ODYsImV4cCI6MTY2MjY0NTk4Nn0.FroUdsnjRfWmSJnV0uwfPCN_c3v0eqgVSsFwVOxuy7s
+
+
+
+{
+    "product_name":"product 1",
+    "product_price":20,
+    "product_quantity":100,
+    "product_brand":"brand 1",
+    "product_category":"category 1",
+    "product_description":"This is the product 1"
+}
+
+
+###
+
+POST http://localhost:7000/signup
+Content-Type: application/json
+
+
+
+{
+    "name":"Shaon Ahmed",
+    "email":"shaon@gmail.com",
+    "password":"123456"
+}
+
+
+###
+
+POST http://localhost:7000/signin
+Content-Type: application/json
+
+
+{
+    "email":"shaon@gmail.com",
+    "password":"123456"
+}
